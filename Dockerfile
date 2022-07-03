@@ -22,3 +22,4 @@ FROM base as result
 COPY --from=electrs-build /root/.cargo/bin/electrs /usr/bin/electrs
 
 WORKDIR /
+EXPOSE 50001
